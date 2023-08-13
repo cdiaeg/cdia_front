@@ -25,6 +25,7 @@
 }
 body {
   /* background-color: #423b3b; */
+  background-color: white;
 }
 /* global section ends */
 
@@ -83,9 +84,13 @@ section {
   right: 0;
   height: 100%;
   width: 0%;
-  background: var(--black);
+  background: var(--main-color);
   z-index: -1;
   transition: 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: rgba(255, 216, 0, 0.5) 0%;
 }
 
 .btn:hover::before {
@@ -214,6 +219,7 @@ ul {
   color: white;
   margin-left: 3rem;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .header .navbar a:hover {
@@ -278,7 +284,7 @@ ul {
 /* home section starts */
 
 .home {
-  height: calc(100vh - 140px);
+  height: calc(100vh - 65px);
   background-image: url("../images/banner 1 1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -606,11 +612,25 @@ ul {
 }
 
 /* home section ends */
+/* about section starts */
+.about {
+  color: var(--upheader-color);
+}
+.about h3 {
+  font-weight: bolder;
+  color: var(--main-color);
+}
+.about h4 {
+  font-size: medium;
+  font-style:oblique;
+  word-spacing: 4px;
+  
+
+}
+/* about section ends */
 
 /* services section starts */
-.services {
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(256, 255, 255));
-}
+
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -627,6 +647,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .services .box-container .box img {
@@ -826,9 +847,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 620px;
+  height: 650px;
   gap: 20px;
   flex-direction: row-reverse;
+  background-color: white;
 }
 .contact .icons-container {
   height: 100%;
