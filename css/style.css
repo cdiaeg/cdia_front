@@ -24,7 +24,7 @@
   transition: all 0.3s ease-out;
 }
 .swiper {
-  width: px;
+  width: auto;
   height: 300px;
 }
 body {
